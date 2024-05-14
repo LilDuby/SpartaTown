@@ -12,7 +12,7 @@ public class JoinBtn : MonoBehaviour
     public void StartGame()
     {
         nameStr = inputName.GetComponent<InputField>().text;
-        if (nameStr.Length >= 3)
+        if (nameStr.Length >= 2)
         {
             PlayerPrefs.SetString("nameData",nameStr);
             SceneManager.LoadScene("MainScene");
