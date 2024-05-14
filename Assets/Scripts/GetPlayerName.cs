@@ -1,18 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour
+
+public class GetPlayerName : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Text text;
+    public string playerName;
+
+    private void Awake()
     {
-        
+        text = GetComponent<Text>();
+    }
+    private void Start()
+    {
+        LoadPlayerName();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LoadPlayerName()
     {
-        
+        playerName = PlayerPrefs.GetString("nameData");
+        text.text = playerName;
     }
 }
