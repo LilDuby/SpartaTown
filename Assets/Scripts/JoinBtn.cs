@@ -9,14 +9,9 @@ public class JoinBtn : MonoBehaviour
     public InputField inputName;
     public string nameStr = null;
 
-    private void Awake()
+    public void StartGame()
     {
         nameStr = inputName.GetComponent<InputField>().text;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         if (nameStr.Length >= 3)
         {
             SceneManager.LoadScene("MainScene");
