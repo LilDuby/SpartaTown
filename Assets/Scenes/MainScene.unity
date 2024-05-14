@@ -410,7 +410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1715500083}
   smoothSpeed: 10
-  offset: {x: 0, y: 0}
+  offset: {x: 0, y: -1}
   limitMinX: -48.5
   limitMaxX: 28.5
   limitMinY: -20.5
@@ -26926,7 +26926,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89067fbd268911d4ab4e0423367ab277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joinBtn: {fileID: 0}
   text: {fileID: 857741324}
   playerName: 
 --- !u!114 &857741324
